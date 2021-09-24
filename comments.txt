@@ -1,0 +1,14 @@
+I took a bit longer than one hour because I had some issues installing
+MySQL and getting it to work with Rails. This didn't seem to count
+as part of the coding exercise.
+
+The form for the create button doesn't do anything. The path is hardcoded,
+I didn't have time to properly set up the Rails form call.
+
+The path to assets is hardcoded. This was done quick and dirty and
+should not be done like this in real code.
+
+Normally I'd use css to hide the ***** credit card numbers instead
+of jquery but there wasn't time.
+
+I didn't have github credentials and couldn't push my code.
