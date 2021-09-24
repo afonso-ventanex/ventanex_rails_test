@@ -2,14 +2,12 @@ common: &common
   adapter: mysql2
   database_timezone: local
   pool: 100
-  password: password
   connect_timeout: 20
   timeout: 900
-  socket: /tmp/mysql.sock
   port: 3306
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
 development:
   <<: *common
   adapter: mysql2
-  database: code_test
+  database: ventanex

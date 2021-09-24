@@ -1,3 +1,12 @@
+<script>
+  $(document).ready(function() {
+    $('.account-number-hidden').hide();
+    $('.hide-account').click(function() {
+      $(this).siblings('.account-number').toggle();
+    });
+  });
+</script>
+
 <div class="col-md-12 mt-2">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -14,7 +23,7 @@
               <th>Account Type</th>
               <th>Account Number</th>
               <th>
-                <button type="button" class="btn btn-success">Create</button>
+                <a href="/pay_accounts/new" class="btn btn-success" role="button">Create</a>
               </th>
             </tr>
           </thead>
@@ -23,9 +32,10 @@
               <tr>
                 <td><%= pay_account.nickname %></td>
                 <td><%= pay_account.account_type.humanize %></td>
-                <td>
-                  <%= pay_account.account_number %>
-                  <button type="button" class="btn btn-sm btn-default">hide</button>
+                <td class="adsfadsf">
+                  <span class="account-number"><%= pay_account.account_number %></span>
+                  <span class="account-number account-number-hidden" >************<%= pay_account.account_number[-4..-1]%></span>
+                  <button type="button" class="btn btn-sm btn-default hide-account">hide</button>
                 </td>
                 <td>
                   <button type="button" class="btn btn-warning">Show</button>
@@ -39,3 +49,6 @@
     </div>
   </div>
 </div>
+
+<div>Loan number: <%= @loan_number %></div>
+<div>Borrower name: <%= @borrower_name %></div>

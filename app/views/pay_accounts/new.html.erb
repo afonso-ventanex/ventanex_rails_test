@@ -1,0 +1,38 @@
+<div class="col-md-12 mt-2">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>
+        Pay Accounts
+      </h3>
+    </div>
+    <div class="panel-body">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <tbody>
+            <%= form_tag("/pay_accounts/create", method: "post") do %>
+              <tr>
+                <td>Nickname</td>
+                <td><%= text_field_tag(:nickname) %></td>
+              </tr>
+              <tr>
+                <td>Account number</td>
+                <td><%= text_field_tag(:account_number) %></td>
+              </tr>
+              <tr>
+                <td>Account type</td>
+                <td><%= text_field_tag(:account_type) %></td>
+              </tr>
+              <tr>
+                <td colspan=2>
+                  <button type="button" class="btn btn-success">Submit</button>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
