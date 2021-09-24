@@ -1,4 +1,4 @@
-# Setup
+# Setup 
 - You will probably need to change the application.yml file to your local database credentials
 ```
 bundle install
