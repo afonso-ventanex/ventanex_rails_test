@@ -11,4 +11,5 @@ should not be done like this in real code.
 Normally I'd use css to hide the ***** credit card numbers instead
 of jquery but there wasn't time.
 
-I didn't have github credentials and couldn't push my code.
+(Erased) I didn't have github credentials and couldn't push my code.
+Ooops! Went ahead and forked the repository and pushed code there.
